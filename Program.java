@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Program {
     public static void main(String[] args) {
         CreateMap createtMap = new CreateMap();
@@ -9,5 +11,8 @@ public class Program {
         WaveAlgorithm waveMap = new WaveAlgorithm(startMap);
         int[][] finishMap = waveMap.wave(startPoint);
         waveMap.printMap(finishMap);
+        // GetRoad getRoad = new GetRoad(finishMap);
+        // var shortWay = getRoad.way(exitPoint, startPoint);
+        // System.out.println(shortWay);
     }
 }
