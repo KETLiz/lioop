@@ -1,14 +1,17 @@
 public class CreateMap {
-    private int m;
-    private int n;
+    private int M = 11;
+    private int N = 9;
 
-    public CreateMap(int m, int n) {
-        this.m = m;
-        this.n = n;
+    public int getM() {
+        return M;
+    }
+
+    public int getN() {
+        return N;
     }
 
     public int[][] wallsInMap() {
-        int[][] map = new int[m][n];
+        int[][] map = new int[M][N];
         map[1][1] = -1;
         map[1][2] = -1;
         map[1][3] = -1;
