@@ -23,7 +23,7 @@ public class GetRoad {
                 road.add(new Point(exitPoint.getX(), exitPoint.getY() - 1));
                 exitPoint = new Point(exitPoint.getX(), exitPoint.getY() - 1);
             } else {
-                System.out.println("какая-то хрень");
+                System.out.println("Программа попадает сюда");
             }
         }
         return road;
