@@ -11,8 +11,8 @@ public class Program {
         WaveAlgorithm waveMap = new WaveAlgorithm(startMap);
         int[][] finishMap = waveMap.wave(startPoint);
         waveMap.printMap(finishMap);
-        // GetRoad getRoad = new GetRoad(finishMap);
-        // var shortWay = getRoad.way(exitPoint, startPoint);
-        // System.out.println(shortWay);
+        GetRoad getRoad = new GetRoad(finishMap);
+        var shortWay = getRoad.way(exitPoint, startPoint);
+        System.out.println(shortWay);
     }
 }
